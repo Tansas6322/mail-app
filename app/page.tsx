@@ -48,12 +48,20 @@ function removeColor(textarea: HTMLTextAreaElement) {
   textarea.focus();
 }
 
-
 // 全文コピー用：改行コードを整形（CRLF/CR→LF）し、末尾に改行を保証
 function normalizeNewlines(text: string) {
   let t = text.replace(/\r\n?/g, "\n");
   if (!t.endsWith("\n")) t += "\n";
   return t;
+}
+
+// ★地方跨ぎ（奥羽-中部 / 奥羽ー中部 など）を分割して扱う
+function splitRegions(regionRaw: string) {
+  return regionRaw
+    .replace(/ー/g, "-") // 全角長音をハイフン扱い
+    .split("-")
+    .map((s) => s.trim())
+    .filter(Boolean);
 }
 
 export default function Page() {
@@ -73,13 +81,22 @@ export default function Page() {
     })();
   }, [season]);
 
+  // ★地方一覧：跨ぎを分割して「奥羽」「中部」など単体だけを並べる
   const regions = useMemo(() => {
-    const set = new Set(all.map((c) => c.region).filter(Boolean));
+    const set = new Set<string>();
+    for (const c of all) {
+      if (!c.region) continue;
+      for (const part of splitRegions(c.region)) set.add(part);
+    }
     return Array.from(set).sort();
   }, [all]);
 
+  // ★国/地域：地方フィルタがあるときは「跨ぎ分割後に含む」で絞る
   const provinces = useMemo(() => {
-    const filtered = region ? all.filter((c) => c.region === region) : all;
+    const filtered = region
+      ? all.filter((c) => c.region && splitRegions(c.region).includes(region))
+      : all;
+
     const set = new Set(filtered.map((c) => c.province).filter(Boolean));
     return Array.from(set).sort();
   }, [all, region]);
@@ -87,7 +104,11 @@ export default function Page() {
   const filteredCastles = useMemo(() => {
     const q = query.trim();
     return all
-      .filter((c) => (region ? c.region === region : true))
+      .filter((c) => {
+        if (!region) return true;
+        if (!c.region) return false;
+        return splitRegions(c.region).includes(region);
+      })
       .filter((c) => (province ? c.province === province : true))
       .filter((c) => (q ? c.name.includes(q) : true))
       .slice(0, 300);
