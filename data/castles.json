@@ -1,0 +1,1812 @@
+[
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽前",
+    "name": "米沢城",
+    "x": 1439,
+    "y": 1117,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽前",
+    "name": "山形城",
+    "x": 1419,
+    "y": 1011,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽前",
+    "name": "延沢城",
+    "x": 1377,
+    "y": 912,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽前",
+    "name": "大宝寺城",
+    "x": 1239,
+    "y": 861,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸奥",
+    "name": "三戸城",
+    "x": 1236,
+    "y": 359,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸奥",
+    "name": "浪岡御所",
+    "x": 1063,
+    "y": 257,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸奥",
+    "name": "大浦城",
+    "x": 1030,
+    "y": 257,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "磐城岩代",
+    "name": "黒川城",
+    "x": 1477,
+    "y": 1259,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "磐城岩代",
+    "name": "須賀川城",
+    "x": 1601,
+    "y": 1337,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "磐城岩代",
+    "name": "小高城",
+    "x": 1672,
+    "y": 1243,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "磐城岩代",
+    "name": "飯野平城",
+    "x": 1745,
+    "y": 1408,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸中",
+    "name": "高水寺城",
+    "x": 1366,
+    "y": 634,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸中",
+    "name": "九戸城",
+    "x": 1295,
+    "y": 430,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸中",
+    "name": "鍋倉城",
+    "x": 1507,
+    "y": 741,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸前",
+    "name": "名生城",
+    "x": 1481,
+    "y": 930,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸前",
+    "name": "利府城",
+    "x": 1541,
+    "y": 1042,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "陸前",
+    "name": "寺池城",
+    "x": 1549,
+    "y": 924,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽後",
+    "name": "檜山城",
+    "x": 1052,
+    "y": 419,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽後",
+    "name": "湊城",
+    "x": 1126,
+    "y": 536,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽後",
+    "name": "角館城",
+    "x": 1250,
+    "y": 616,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "奥羽",
+    "province": "羽後",
+    "name": "横手城",
+    "x": 1284,
+    "y": 694,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "奥羽 - 中部",
+    "province": "磐城岩代",
+    "name": "磐城港",
+    "x": 1479,
+    "y": 2072,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "奥羽 - 中部",
+    "province": "羽前",
+    "name": "羽前港",
+    "x": 1213,
+    "y": 803,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "甲斐南信",
+    "name": "躑躅ヶ崎城",
+    "x": 1504,
+    "y": 1790,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "甲斐南信",
+    "name": "飯田城",
+    "x": 1381,
+    "y": 1819,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "甲斐南信",
+    "name": "岩殿白",
+    "x": 1579,
+    "y": 1812,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "甲斐南信",
+    "name": "木曾福島城",
+    "x": 1310,
+    "y": 1742,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "甲斐南信",
+    "name": "上原城",
+    "x": 1347,
+    "y": 1674,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "常陸",
+    "name": "太田城",
+    "x": 1744,
+    "y": 1555,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "常陸",
+    "name": "府中城",
+    "x": 1757,
+    "y": 1650,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "常陸",
+    "name": "小田城",
+    "x": 1732,
+    "y": 1665,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "武蔵",
+    "name": "江戸城",
+    "x": 1479,
+    "y": 1817,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "武蔵",
+    "name": "河越城",
+    "x": 1633,
+    "y": 1737,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "武蔵",
+    "name": "忍城",
+    "x": 1611,
+    "y": 1676,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "武蔵",
+    "name": "岩付城",
+    "x": 1682,
+    "y": 1738,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "相模伊豆",
+    "name": "小田原城",
+    "x": 1687,
+    "y": 1912,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "相模伊豆",
+    "name": "韮山城",
+    "x": 1682,
+    "y": 1980,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "相模伊豆",
+    "name": "玉縄城",
+    "x": 1736,
+    "y": 1598,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "下野",
+    "name": "宇都宮城",
+    "x": 1620,
+    "y": 1527,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "下野",
+    "name": "唐沢山城",
+    "x": 1589,
+    "y": 1593,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "下野",
+    "name": "大田原城",
+    "x": 1637,
+    "y": 1483,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "房総",
+    "name": "久留里城",
+    "x": 1867,
+    "y": 1915,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "房総",
+    "name": "佐倉城",
+    "x": 1827,
+    "y": 1802,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "関東",
+    "province": "房総",
+    "name": "古河御所",
+    "x": 1694,
+    "y": 1672,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "関東 - 中部",
+    "province": "中部-美濃",
+    "name": "美濃関所",
+    "x": 1355,
+    "y": 1869,
+    "type": "関所",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越後",
+    "name": "春日部城",
+    "x": 1187,
+    "y": 1342,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越後",
+    "name": "新発田城",
+    "x": 1373,
+    "y": 1095,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越後",
+    "name": "栃尾城",
+    "x": 1279,
+    "y": 1225,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越後",
+    "name": "坂戸城",
+    "x": 1336,
+    "y": 1369,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越後",
+    "name": "北条城",
+    "x": 1234,
+    "y": 1274,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "北信",
+    "name": "深志城",
+    "x": 1269,
+    "y": 1590,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "北信",
+    "name": "砥石城",
+    "x": 1320,
+    "y": 1569,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "北信",
+    "name": "海津城",
+    "x": 1283,
+    "y": 1512,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "北信",
+    "name": "飯山城",
+    "x": 1268,
+    "y": 1423,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越中能登",
+    "name": "富山城",
+    "x": 1064,
+    "y": 1457,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越中能登",
+    "name": "七尾城",
+    "x": 942,
+    "y": 1348,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越中能登",
+    "name": "増山城",
+    "x": 1029,
+    "y": 1482,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "越中能登",
+    "name": "魚津城",
+    "x": 1084,
+    "y": 1414,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "上野",
+    "name": "箕輪城",
+    "x": 1457,
+    "y": 1567,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "上野",
+    "name": "新田金山城",
+    "x": 1561,
+    "y": 1616,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "上野",
+    "name": "沼田城",
+    "x": 1466,
+    "y": 1515,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "上野",
+    "name": "国峯城",
+    "x": 1480,
+    "y": 1629,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "飛騨",
+    "name": "桜洞城",
+    "x": 1170,
+    "y": 1681,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "飛騨",
+    "name": "帰雲城",
+    "x": 1081,
+    "y": 1597,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "北陸",
+    "province": "飛騨",
+    "name": "高原諏訪城",
+    "x": 1133,
+    "y": 1574,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "安芸備後",
+    "name": "吉田郡山城",
+    "x": 473,
+    "y": 1955,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "安芸備後",
+    "name": "神辺城",
+    "x": 614,
+    "y": 2053,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "安芸備後",
+    "name": "桜尾城",
+    "x": 435,
+    "y": 2076,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "安芸備後",
+    "name": "鏡山城",
+    "x": 510,
+    "y": 2051,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "備前備中",
+    "name": "天神山城",
+    "x": 717,
+    "y": 1985,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "備前備中",
+    "name": "備中高松城",
+    "x": 691,
+    "y": 2024,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "備前備中",
+    "name": "高田城",
+    "x": 614,
+    "y": 1895,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "備前備中",
+    "name": "鶴首城",
+    "x": 624,
+    "y": 1999,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "因幡伯耆",
+    "name": "鳥取城",
+    "x": 651,
+    "y": 1776,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "因幡伯耆",
+    "name": "羽衣石城",
+    "x": 569,
+    "y": 1777,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "因幡伯耆",
+    "name": "米子城",
+    "x": 477,
+    "y": 1778,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "因幡伯耆",
+    "name": "江美城",
+    "x": 527,
+    "y": 7824,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "周防長門",
+    "name": "山口城",
+    "x": 303,
+    "y": 2121,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "周防長門",
+    "name": "指月城",
+    "x": 523,
+    "y": 2046,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "周防長門",
+    "name": "周防高森城",
+    "x": 398,
+    "y": 2118,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "周防長門",
+    "name": "櫛崎城",
+    "x": 213,
+    "y": 2133,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "出雲石見",
+    "name": "月山富田城",
+    "x": 450,
+    "y": 1784,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "出雲石見",
+    "name": "三刀屋城",
+    "x": 392,
+    "y": 1795,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "出雲石見",
+    "name": "山吹城",
+    "x": 349,
+    "y": 1843,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "中国地方",
+    "province": "出雲石見",
+    "name": "津和野城",
+    "x": 303,
+    "y": 2011,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "ー土佐",
+    "name": "岡豊城",
+    "x": 817,
+    "y": 2324,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "土佐",
+    "name": "中村御所",
+    "x": 787,
+    "y": 2482,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "土佐",
+    "name": "本山城",
+    "x": 795,
+    "y": 2276,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "土佐",
+    "name": "安芸城",
+    "x": 896,
+    "y": 2357,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "土佐",
+    "name": "朝倉城",
+    "x": 805,
+    "y": 2352,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "伊予",
+    "name": "湯築城",
+    "x": 610,
+    "y": 2234,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "伊予",
+    "name": "黒瀬城",
+    "x": 625,
+    "y": 2352,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "伊予",
+    "name": "川之江城",
+    "x": 753,
+    "y": 2207,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "伊予",
+    "name": "金子城",
+    "x": 701,
+    "y": 2214,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "紀伊",
+    "name": "雑賀城",
+    "x": 1045,
+    "y": 2158,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "紀伊",
+    "name": "新宮城",
+    "x": 1280,
+    "y": 2314,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "紀伊",
+    "name": "手取城",
+    "x": 1111,
+    "y": 2248,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "紀伊",
+    "name": "田辺城",
+    "x": 1171,
+    "y": 2309,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "讃岐",
+    "name": "十河城",
+    "x": 806,
+    "y": 2126,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "讃岐",
+    "name": "天霧城",
+    "x": 752,
+    "y": 2138,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "讃岐",
+    "name": "引田城",
+    "x": 862,
+    "y": 2145,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "阿波淡路",
+    "name": "勝瑞城",
+    "x": 920,
+    "y": 2179,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "阿波淡路",
+    "name": "洲本城",
+    "x": 599,
+    "y": 2131,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "阿波淡路",
+    "name": "白地城",
+    "x": 807,
+    "y": 2201,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "四国紀伊",
+    "province": "阿波淡路",
+    "name": "日和佐城",
+    "x": 989,
+    "y": 2295,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "薩摩大隅",
+    "name": "内城",
+    "x": 505,
+    "y": 2846,
+    "type": "守護所",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "薩摩大隅",
+    "name": "高山城",
+    "x": 627,
+    "y": 2920,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "薩摩大隅",
+    "name": "加治木城",
+    "x": 507,
+    "y": 2798,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "薩摩大隅",
+    "name": "出水城",
+    "x": 389,
+    "y": 2707,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥後",
+    "name": "人吉城",
+    "x": 464,
+    "y": 2668,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥後",
+    "name": "隈本城",
+    "x": 352,
+    "y": 2493,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥後",
+    "name": "岩尾城",
+    "x": 430,
+    "y": 2544,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "豊前豊後",
+    "name": "府内館",
+    "x": 469,
+    "y": 2392,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "豊前豊後",
+    "name": "城井谷城",
+    "x": 298,
+    "y": 2288,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "豊前豊後",
+    "name": "岡城",
+    "x": 471,
+    "y": 2461,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "豊前豊後",
+    "name": "門司城",
+    "x": 230,
+    "y": 2188,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥前",
+    "name": "佐嘉城",
+    "x": 195,
+    "y": 2367,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥前",
+    "name": "日之江城",
+    "x": 287,
+    "y": 2523,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "肥前",
+    "name": "伊万里城",
+    "x": 93,
+    "y": 2341,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "日向",
+    "name": "都於郡城",
+    "x": 608,
+    "y": 2714,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "日向",
+    "name": "縣城",
+    "x": 573,
+    "y": 2575,
+    "type": "一般",
+    "lv": 4
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "日向",
+    "name": "飫肥城",
+    "x": 671,
+    "y": 2843,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "筑前筑後",
+    "name": "立花山城",
+    "x": 170,
+    "y": 2247,
+    "type": "中核城",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "筑前筑後",
+    "name": "岩屋城",
+    "x": 184,
+    "y": 2279,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "九州",
+    "province": "筑前筑後",
+    "name": "久留米城",
+    "x": 246,
+    "y": 2358,
+    "type": "一般",
+    "lv": 3
+  },
+  {
+    "season": "S1",
+    "region": "九州 - 近畿",
+    "province": "近畿-伊勢伊賀",
+    "name": "伊勢港・日向南港",
+    "x": 1350,
+    "y": 2123,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "九州 - 近畿",
+    "province": "近畿-丹後但馬",
+    "name": "丹後港・筑前港",
+    "x": 798,
+    "y": 1704,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "摂可泉",
+    "name": "石山御坊",
+    "x": 1035,
+    "y": 2038,
+    "type": "守護所",
+    "lv": 9
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "摂可泉",
+    "name": "岸和田城",
+    "x": 1048,
+    "y": 2120,
+    "type": "一般",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "摂可泉",
+    "name": "芥川山城",
+    "x": 1013,
+    "y": 1977,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "摂可泉",
+    "name": "高屋城",
+    "x": 1072,
+    "y": 2088,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "摂可泉",
+    "name": "伊丹城",
+    "x": 996,
+    "y": 2003,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "播磨",
+    "name": "御着城",
+    "x": 853,
+    "y": 1980,
+    "type": "中核城",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "播磨",
+    "name": "三木城",
+    "x": 915,
+    "y": 1996,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "播磨",
+    "name": "上月城",
+    "x": 754,
+    "y": 1928,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "播磨",
+    "name": "置塩城",
+    "x": 820,
+    "y": 1960,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "大和",
+    "name": "高取城",
+    "x": 1130,
+    "y": 2101,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "大和",
+    "name": "信貴山城",
+    "x": 1086,
+    "y": 2055,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "大和",
+    "name": "筒井城",
+    "x": 1112,
+    "y": 2057,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "伊勢伊賀",
+    "name": "伊賀上野城",
+    "x": 1158,
+    "y": 2029,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "伊勢伊賀",
+    "name": "長嶋城",
+    "x": 1214,
+    "y": 1934,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "伊勢伊賀",
+    "name": "安濃津城",
+    "x": 1227,
+    "y": 2042,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "伊勢伊賀",
+    "name": "鳥羽城",
+    "x": 1325,
+    "y": 2114,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "丹後但馬",
+    "name": "此隅城",
+    "x": 755,
+    "y": 1762,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "丹後但馬",
+    "name": "建部山城",
+    "x": 852,
+    "y": 1785,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "丹後但馬",
+    "name": "芦屋城",
+    "x": 672,
+    "y": 1738,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "近畿",
+    "province": "丹後但馬",
+    "name": "竹田城",
+    "x": 799,
+    "y": 1838,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "美濃",
+    "name": "岩村城",
+    "x": 1315,
+    "y": 1853,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "美濃",
+    "name": "郡上八幡城",
+    "x": 1155,
+    "y": 1734,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "加賀",
+    "name": "金沢御坊",
+    "x": 957,
+    "y": 1495,
+    "type": "中核城",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "加賀",
+    "name": "大聖寺城",
+    "x": 939,
+    "y": 1556,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "加賀",
+    "name": "鳥越城",
+    "x": 982,
+    "y": 1546,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "尾張",
+    "name": "清州城",
+    "x": 1230,
+    "y": 1919,
+    "type": "中核城",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "尾張",
+    "name": "鳴海城",
+    "x": 1273,
+    "y": 1954,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "尾張",
+    "name": "那古野城",
+    "x": 1257,
+    "y": 1921,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "尾張",
+    "name": "犬山城",
+    "x": 1227,
+    "y": 1858,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "駿河遠江",
+    "name": "駿河城",
+    "x": 1852,
+    "y": 1988,
+    "type": "中核城",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "駿河遠江",
+    "name": "引馬城",
+    "x": 1477,
+    "y": 2054,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "駿河遠江",
+    "name": "興国寺城",
+    "x": 1610,
+    "y": 1941,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "駿河遠江",
+    "name": "二俣城",
+    "x": 1463,
+    "y": 2007,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "越前若挟",
+    "name": "一乗谷城",
+    "x": 971,
+    "y": 1648,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "越前若挟",
+    "name": "金ヶ崎城",
+    "x": 995,
+    "y": 1761,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "越前若挟",
+    "name": "後瀬山城",
+    "x": 956,
+    "y": 1801,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "越前若挟",
+    "name": "朝倉山城",
+    "x": 924,
+    "y": 1604,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "三河",
+    "name": "岡崎城",
+    "x": 1337,
+    "y": 1990,
+    "type": "中核城",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "三河",
+    "name": "吉田城",
+    "x": 1298,
+    "y": 2032,
+    "type": "一般",
+    "lv": 6
+  },
+  {
+    "season": "S1",
+    "region": "中部",
+    "province": "三河",
+    "name": "長篠城",
+    "x": 1398,
+    "y": 1983,
+    "type": "一般",
+    "lv": 5
+  },
+  {
+    "season": "S1",
+    "region": "中部 - 奥羽",
+    "province": "",
+    "name": "遠江港",
+    "x": 1479,
+    "y": 2072,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部 - 奥羽",
+    "province": "",
+    "name": "加賀港",
+    "x": 918,
+    "y": 1553,
+    "type": "港",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部 - 関東",
+    "province": "中部-美濃",
+    "name": "美濃関所",
+    "x": 1355,
+    "y": 1869,
+    "type": "関所",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "中部畿内関",
+    "province": "中部-美濃",
+    "name": "東近江関所",
+    "x": 1118,
+    "y": 1857,
+    "type": "関所",
+    "lv": 9
+  },
+  {
+    "season": "S1",
+    "region": "中部畿内関",
+    "province": "中部-越前若狭",
+    "name": "北近江関所",
+    "x": 995,
+    "y": 1812,
+    "type": "関所",
+    "lv": 9
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "丹波",
+    "name": "二条御所",
+    "x": 1024,
+    "y": 1927,
+    "type": "守護所",
+    "lv": 10
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "丹波",
+    "name": "勝竜寺城",
+    "x": 1027,
+    "y": 1951,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "近江",
+    "name": "観音寺城",
+    "x": 1090,
+    "y": 1891,
+    "type": "中核城",
+    "lv": 9
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "近江",
+    "name": "小谷城",
+    "x": 1065,
+    "y": 1818,
+    "type": "一般",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "近江",
+    "name": "朽木谷城",
+    "x": 1935,
+    "y": 1869,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "近江",
+    "name": "佐和山城",
+    "x": 1095,
+    "y": 1878,
+    "type": "一般",
+    "lv": 7
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "山城",
+    "name": "八上城",
+    "x": 922,
+    "y": 1882,
+    "type": "中核城",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "山城",
+    "name": "黒井城",
+    "x": 889,
+    "y": 1863,
+    "type": "一般",
+    "lv": 8
+  },
+  {
+    "season": "S1",
+    "region": "畿内",
+    "province": "山城",
+    "name": "八上城",
+    "x": 970,
+    "y": 1908,
+    "type": "一般",
+    "lv": 7
+  }
+]
