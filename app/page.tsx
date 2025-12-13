@@ -29,11 +29,25 @@ function removeColor(textarea: HTMLTextAreaElement) {
   if (start === end) return;
 
   const selected = textarea.value.slice(start, end);
-  const uncolored = selected.replace(/^([@&#$])(.*)\1$/s, "$2");
 
-  textarea.setRangeText(uncolored, start, end, "end");
+  // 先頭と末尾が同じタグ(@ & $ #)なら外す
+  if (selected.length >= 2) {
+    const first = selected[0];
+    const last = selected[selected.length - 1];
+    const tags = new Set(["@", "&", "$", "#"]);
+
+    if (first === last && tags.has(first)) {
+      const uncolored = selected.slice(1, -1);
+      textarea.setRangeText(uncolored, start, end, "end");
+      textarea.focus();
+      return;
+    }
+  }
+
+  // それ以外はそのまま（事故防止）
   textarea.focus();
 }
+
 
 // 全文コピー用：改行コードを整形（CRLF/CR→LF）し、末尾に改行を保証
 function normalizeNewlines(text: string) {
