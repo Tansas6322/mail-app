@@ -30,48 +30,49 @@ function removeColor(textarea: HTMLTextAreaElement) {
 
   const selected = textarea.value.slice(start, end);
 
-  // 先頭と末尾が同じタグ(@ & $ #)なら外す
   if (selected.length >= 2) {
     const first = selected[0];
     const last = selected[selected.length - 1];
     const tags = new Set(["@", "&", "$", "#"]);
-
     if (first === last && tags.has(first)) {
-      const uncolored = selected.slice(1, -1);
-      textarea.setRangeText(uncolored, start, end, "end");
+      textarea.setRangeText(selected.slice(1, -1), start, end, "end");
       textarea.focus();
       return;
     }
   }
-
-  // それ以外はそのまま（事故防止）
   textarea.focus();
 }
 
-// 全文コピー用：改行コードを整形（CRLF/CR→LF）し、末尾に改行を保証
-function normalizeNewlines(text: string) {
+// ★「真戦が \n を改行扱いする」前提：コピー用に実改行を「\n」文字列へ変換
+function normalizeForShinsen(text: string) {
+  // CRLF/CR を LF に統一
   let t = text.replace(/\r\n?/g, "\n");
+
+  // 末尾に改行が欲しいならここで保証（LF）
   if (!t.endsWith("\n")) t += "\n";
-  return t;
+
+  // 実改行を、見える \n（バックスラッシュ+n）へ
+  // JSの "\\n" は文字としての \n になります
+  return t.replace(/\n/g, "\\n");
 }
 
 // ★地方跨ぎ（奥羽-中部 / 奥羽ー中部 など）を分割して扱う
 function splitRegions(regionRaw: string) {
   return regionRaw
-    .replace(/ー/g, "-") // 全角長音をハイフン扱い
+    .replace(/ー/g, "-")
     .split("-")
     .map((s) => s.trim())
     .filter(Boolean);
 }
 
-// iOS判定（Safari/Chrome iOS 両方）
+// iOS判定（Safari/Chrome iOS）
 function isIOS() {
   if (typeof navigator === "undefined") return false;
   return /iPad|iPhone|iPod/.test(navigator.userAgent);
 }
 
-// iOS安定コピー（DOM選択 + execCommand）
-function copyTextIOS(text: string) {
+// DOM選択コピー（iOSでも比較的安定）
+function copyTextByExecCommand(text: string) {
   const el = document.createElement("textarea");
   el.value = text;
   el.setAttribute("readonly", "true");
@@ -79,9 +80,18 @@ function copyTextIOS(text: string) {
   el.style.left = "-9999px";
   el.style.top = "0";
   document.body.appendChild(el);
+
   el.focus();
   el.select();
-  const ok = document.execCommand("copy");
+  el.setSelectionRange(0, el.value.length); // iOS向け
+
+  let ok = false;
+  try {
+    ok = document.execCommand("copy");
+  } catch {
+    ok = false;
+  }
+
   document.body.removeChild(el);
   return ok;
 }
@@ -103,7 +113,7 @@ export default function Page() {
     })();
   }, [season]);
 
-  // ★地方一覧：跨ぎを分割して「奥羽」「中部」など単体だけを並べる
+  // 地方一覧：跨ぎを分割して単体だけを並べる
   const regions = useMemo(() => {
     const set = new Set<string>();
     for (const c of all) {
@@ -113,12 +123,11 @@ export default function Page() {
     return Array.from(set).sort();
   }, [all]);
 
-  // ★国/地域：地方フィルタがあるときは「跨ぎ分割後に含む」で絞る
+  // 国/地域：地方フィルタ時は「跨ぎ分割後に含む」で絞る
   const provinces = useMemo(() => {
     const filtered = region
       ? all.filter((c) => c.region && splitRegions(c.region).includes(region))
       : all;
-
     const set = new Set(filtered.map((c) => c.province).filter(Boolean));
     return Array.from(set).sort();
   }, [all, region]);
@@ -137,7 +146,6 @@ export default function Page() {
   }, [all, region, province, query]);
 
   const onInsert = (c: Castle) => {
-    // 見やすいよう末尾にスペースを1つ付与
     const text = `${c.name}(${c.x},${c.y}) `;
     const ta = textareaRef.current;
     if (!ta) return;
@@ -145,76 +153,48 @@ export default function Page() {
     setBody(ta.value);
   };
 
-  // ★改行付きコピー：iOSは execCommand にフォールバックして改行保持を安定させる
-  const copyAll = () => {
-    const normalized = normalizeNewlines(body);
+  // ★真戦用コピー：改行は「\n」文字列としてコピー
+  const copyAllForShinsen = () => {
+    const normalized = normalizeForShinsen(body);
 
-    if (isIOS()) {
-      const ok = copyTextIOS(normalized);
-      alert(ok ? "改行付きでコピーしました（iOS）" : "コピーに失敗しました（iOS）");
+    // iOS Chromeで効くことが多いのでまずClipboard APIを試す
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard
+        .writeText(normalized)
+        .then(() => alert(isIOS() ? "コピーしました（\\n形式 / iOS）" : "コピーしました（\\n形式）"))
+        .catch(() => {
+          const ok = copyTextByExecCommand(normalized);
+          alert(ok ? "コピーしました（fallback）" : "コピーに失敗しました");
+        });
       return;
     }
 
-    // Android / PC
-    navigator.clipboard
-      .writeText(normalized)
-      .then(() => alert("改行付きでコピーしました"))
-      .catch(() => {
-        // 念のためフォールバック（ブラウザ権限など）
-        const ok = copyTextIOS(normalized);
-        alert(ok ? "改行付きでコピーしました" : "コピーに失敗しました");
-      });
+    const ok = copyTextByExecCommand(normalized);
+    alert(ok ? "コピーしました（fallback）" : "コピーに失敗しました");
   };
 
   return (
     <main style={{ maxWidth: 1100, margin: "24px auto", padding: 16, fontFamily: "system-ui" }}>
-      <h1 style={{ fontSize: 28, fontWeight: 800, marginBottom: 10 }}>信長の野望 真戦 メールエディタ</h1>
+      <h1 style={{ fontSize: 28, fontWeight: 800, marginBottom: 10 }}>信長の野望 真戦 御触書エディタ</h1>
 
       <section style={{ display: "grid", gap: 12, marginBottom: 16 }}>
         <label style={{ display: "grid", gap: 6 }}>
           <div style={{ fontWeight: 700 }}>本文</div>
 
-          {/* 色ボタン */}
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            <button
-              type="button"
-              onClick={() => textareaRef.current && applyColor(textareaRef.current, "@")}
-              style={colorBtn()}
-              title="@青@"
-            >
+            <button type="button" onClick={() => textareaRef.current && applyColor(textareaRef.current, "@")} style={colorBtn()} title="@青@">
               青
             </button>
-            <button
-              type="button"
-              onClick={() => textareaRef.current && applyColor(textareaRef.current, "&")}
-              style={colorBtn()}
-              title="&赤&"
-            >
+            <button type="button" onClick={() => textareaRef.current && applyColor(textareaRef.current, "&")} style={colorBtn()} title="&赤&">
               赤
             </button>
-            <button
-              type="button"
-              onClick={() => textareaRef.current && applyColor(textareaRef.current, "$")}
-              style={colorBtn()}
-              title="$緑$"
-            >
+            <button type="button" onClick={() => textareaRef.current && applyColor(textareaRef.current, "$")} style={colorBtn()} title="$緑$">
               緑
             </button>
-            <button
-              type="button"
-              onClick={() => textareaRef.current && applyColor(textareaRef.current, "#")}
-              style={colorBtn()}
-              title="#黄#"
-            >
+            <button type="button" onClick={() => textareaRef.current && applyColor(textareaRef.current, "#")} style={colorBtn()} title="#黄#">
               黄
             </button>
-
-            <button
-              type="button"
-              onClick={() => textareaRef.current && removeColor(textareaRef.current)}
-              style={colorBtn()}
-              title="色解除"
-            >
+            <button type="button" onClick={() => textareaRef.current && removeColor(textareaRef.current)} style={colorBtn()} title="色解除">
               解除
             </button>
 
@@ -227,7 +207,7 @@ export default function Page() {
             ref={textareaRef}
             value={body}
             onChange={(e) => setBody(e.target.value)}
-            placeholder="ここにメール本文を書いてください"
+            placeholder="ここに御触書本文を書いてください"
             rows={10}
             style={{
               width: "100%",
@@ -241,9 +221,13 @@ export default function Page() {
         </label>
 
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-          <button onClick={copyAll} style={btn()}>
-            全文コピー（改行付き）
+          <button type="button" onClick={copyAllForShinsen} style={btn()}>
+            コピー（改行(\n)付）
           </button>
+        </div>
+
+        <div style={{ fontSize: 12, opacity: 0.75 }}>
+          ※このコピーは改行を「\n」という文字として入れます（信長真戦側で \n→改行になる前提）。
         </div>
       </section>
 
@@ -300,27 +284,17 @@ export default function Page() {
 
           <label style={{ display: "grid", gap: 6, flex: 1, minWidth: 240 }}>
             <div style={{ fontWeight: 700 }}>城名検索</div>
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="例：清洲 / 二条 / 小田原 …"
-              style={input()}
-            />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="例：清洲 / 二条 / 小田原 …" style={input()} />
           </label>
         </div>
 
         <div style={{ fontWeight: 700 }}>城リスト（クリックで本文に挿入）：{filteredCastles.length} 件表示</div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-            gap: 10,
-          }}
-        >
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 10 }}>
           {filteredCastles.map((c, i) => (
             <button
               key={`${c.season}-${c.region}-${c.province}-${c.name}-${c.x}-${c.y}-${i}`}
+              type="button"
               onClick={() => onInsert(c)}
               style={cardBtn()}
             >
