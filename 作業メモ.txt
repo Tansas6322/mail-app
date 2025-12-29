@@ -1,0 +1,11 @@
+cmdで
+cd C:\Users\rnaka\mail-app
+npm run dev
+
+
+
+cd C:\Users\rnaka\mail-app
+git status
+git add .
+git commit -m "fix formation load and comments"
+git push origin main

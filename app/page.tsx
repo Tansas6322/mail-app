@@ -64,6 +64,28 @@ function splitRegions(regionRaw: string) {
     .filter(Boolean);
 }
 
+// iOS判定（Safari/Chrome iOS 両方）
+function isIOS() {
+  if (typeof navigator === "undefined") return false;
+  return /iPad|iPhone|iPod/.test(navigator.userAgent);
+}
+
+// iOS安定コピー（DOM選択 + execCommand）
+function copyTextIOS(text: string) {
+  const el = document.createElement("textarea");
+  el.value = text;
+  el.setAttribute("readonly", "true");
+  el.style.position = "fixed";
+  el.style.left = "-9999px";
+  el.style.top = "0";
+  document.body.appendChild(el);
+  el.focus();
+  el.select();
+  const ok = document.execCommand("copy");
+  document.body.removeChild(el);
+  return ok;
+}
+
 export default function Page() {
   const [season, setSeason] = useState("S1");
   const [region, setRegion] = useState<string>("");
@@ -123,11 +145,25 @@ export default function Page() {
     setBody(ta.value);
   };
 
-  // 改行コードを整形してコピー（末尾改行も付与）
-  const copyAll = async () => {
+  // ★改行付きコピー：iOSは execCommand にフォールバックして改行保持を安定させる
+  const copyAll = () => {
     const normalized = normalizeNewlines(body);
-    await navigator.clipboard.writeText(normalized);
-    alert("改行付きでコピーしました");
+
+    if (isIOS()) {
+      const ok = copyTextIOS(normalized);
+      alert(ok ? "改行付きでコピーしました（iOS）" : "コピーに失敗しました（iOS）");
+      return;
+    }
+
+    // Android / PC
+    navigator.clipboard
+      .writeText(normalized)
+      .then(() => alert("改行付きでコピーしました"))
+      .catch(() => {
+        // 念のためフォールバック（ブラウザ権限など）
+        const ok = copyTextIOS(normalized);
+        alert(ok ? "改行付きでコピーしました" : "コピーに失敗しました");
+      });
   };
 
   return (
