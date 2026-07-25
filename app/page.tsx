@@ -248,6 +248,7 @@ export default function Page() {
               style={select()}
             >
               <option value="S1">S1</option>
+              <option value="S4">S4</option>
             </select>
           </label>
 
